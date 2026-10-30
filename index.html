@@ -7,24 +7,25 @@
 <title>امیرحسین | یک شروع تازه</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
-:root{color-scheme:dark;--bg:#090d18;--panel:#111827;--muted:#9aa8bd;--text:#f4f7fb;--accent:#8b9cff;--line:#ffffff17}
+:root{color-scheme:dark;--bg:#090d18;--muted:#9aa8bd;--text:#f4f7fb;--accent:#aab5ff;--line:#ffffff19;--panel:#111827}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#28356866,transparent 38%),radial-gradient(ellipse at 0% 70%,#176b6550,transparent 35%),var(--bg);color:var(--text);font-family:'Vazirmatn',Tahoma,sans-serif;min-height:100vh}
-.wrap{width:min(100% - 40px,980px);margin:auto}nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font-weight:800;letter-spacing:-1px;font-size:20px}.logo span{color:var(--accent)}nav a{color:var(--muted);text-decoration:none;font-size:14px}
-.hero{min-height:75vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:90px 0 100px}.badge{border:1px solid #9aaaff55;background:#8b9cff15;color:#c7ceff;border-radius:50px;padding:7px 15px;font-size:13px}.hero h1{font-size:clamp(42px,8vw,82px);line-height:1.25;letter-spacing:-3px;margin:26px 0 14px;font-weight:800}.hero h1 em{font-style:normal;color:var(--accent)}.hero p{font-size:clamp(16px,2.5vw,20px);line-height:2;color:var(--muted);max-width:620px;margin:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.btn{padding:12px 22px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px}.primary{background:#aab5ff;color:#11172b}.secondary{border:1px solid var(--line);color:var(--text)}.section{padding:38px 0 75px}.section h2{font-size:25px;margin:0 0 22px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#ffffff0c,#ffffff04);border:1px solid var(--line);border-radius:18px;padding:23px;min-height:150px}.icon{font-size:25px}.card h3{font-size:17px;margin:12px 0 6px}.card p{color:var(--muted);font-size:14px;line-height:1.9;margin:0}
-.guestbook{border:1px solid var(--line);border-radius:20px;padding:24px;background:#ffffff08}.guestbook-intro{color:var(--muted);line-height:1.9;margin-top:-10px}.form{display:grid;grid-template-columns:1fr 2fr auto;gap:10px;margin-top:20px}.field{width:100%;background:#090f1d;border:1px solid #ffffff20;border-radius:11px;padding:13px;color:var(--text);font:inherit;outline:none}.field:focus{border-color:var(--accent)}textarea.field{resize:vertical;min-height:50px}.send{border:0;border-radius:11px;background:#aab5ff;color:#11172b;padding:0 20px;font:600 14px 'Vazirmatn',sans-serif;cursor:pointer}.send:disabled{opacity:.55;cursor:wait}.status{min-height:25px;color:#bfc9ff;font-size:13px;margin:10px 0}.messages{display:grid;gap:10px;margin-top:12px}.message{border:1px solid var(--line);background:#ffffff06;border-radius:13px;padding:14px 16px}.message strong{font-size:14px}.message p{white-space:pre-wrap;overflow-wrap:anywhere;color:#c2ccdc;line-height:1.8;margin:6px 0 0;font-size:14px}.empty{color:var(--muted);font-size:14px;padding:12px 0}
+.wrap{width:min(100% - 40px,980px);margin:auto}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:15px}.logo{font-weight:800;letter-spacing:-1px;font-size:20px}.logo span{color:var(--accent)}nav a{color:var(--muted);text-decoration:none;font-size:13px;margin-right:15px}
+.hero{min-height:65vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:80px 0}.badge{border:1px solid #9aaaff55;background:#8b9cff15;color:#c7ceff;border-radius:50px;padding:7px 15px;font-size:13px}.hero h1{font-size:clamp(42px,8vw,82px);line-height:1.25;letter-spacing:-3px;margin:26px 0 14px;font-weight:800}.hero h1 em{font-style:normal;color:var(--accent)}.hero p{font-size:clamp(16px,2.5vw,20px);line-height:2;color:var(--muted);max-width:620px;margin:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:11px 19px;border-radius:12px;text-decoration:none;font-weight:600;font-size:13px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}.primary{background:#aab5ff;color:#11172b;border:0}.secondary{border:1px solid var(--line);color:var(--text);background:transparent}.section{padding:35px 0 55px}.section h2{font-size:24px;margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card,.box{background:linear-gradient(145deg,#ffffff0c,#ffffff04);border:1px solid var(--line);border-radius:18px;padding:22px}.card{min-height:145px}.icon{font-size:25px}.card h3{font-size:16px;margin:10px 0 5px}.card p,.muted{color:var(--muted);font-size:14px;line-height:1.9;margin:0}
+.box{margin-bottom:16px}.box h3{margin:0 0 8px;font-size:18px}.hint{font-size:13px;color:var(--muted);line-height:1.9;margin:0 0 16px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form .wide{grid-column:1/-1}.field{width:100%;background:#090f1d;border:1px solid #ffffff20;border-radius:11px;padding:12px 14px;color:var(--text);font:inherit;font-size:14px;outline:none}.field:focus{border-color:var(--accent)}textarea.field{resize:vertical;min-height:90px}.btnrow{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.status{min-height:23px;color:#c5ceff;font-size:13px;margin:9px 0 0}.hidden{display:none!important}.list{display:grid;gap:10px;margin-top:15px}.item{border:1px solid var(--line);background:#ffffff06;border-radius:13px;padding:13px 15px}.item-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.item strong{font-size:14px}.item p{white-space:pre-wrap;overflow-wrap:anywhere;color:#c2ccdc;line-height:1.85;margin:7px 0 0;font-size:14px}.small{font-size:12px;color:var(--muted)}.empty{color:var(--muted);font-size:14px;padding:10px 0}.likebtn{border:1px solid #ffffff24;background:#ffffff09;color:var(--text);border-radius:10px;padding:8px 13px;font:inherit;cursor:pointer}.likebtn.liked{color:#ff9db5;border-color:#ff9db555}.chatlog{max-height:390px;overflow:auto;padding-left:3px}.admin-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.danger{background:#49202c;color:#ffd9e1;border:1px solid #a64b63;border-radius:9px;padding:7px 10px;cursor:pointer;font:inherit;font-size:12px}
 footer{border-top:1px solid var(--line);padding:25px 0;color:#718096;font-size:13px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-@media(max-width:650px){.grid{grid-template-columns:1fr}.hero{min-height:68vh;padding:65px 0}.hero h1{letter-spacing:-1.5px}.wrap{width:min(100% - 30px,980px)}.form{grid-template-columns:1fr}.send{padding:13px}}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.hero{min-height:58vh;padding:60px 0}.hero h1{letter-spacing:-1.5px}.wrap{width:min(100% - 30px,980px)}.form{grid-template-columns:1fr}.form .wide{grid-column:auto}nav a{margin-right:7px;font-size:11px}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav><div class="logo">AMIR<span>.</span></div><a href="#guestbook">دفتر یادگاری‌ها ↓</a></nav>
+<nav><div class="logo">AMIR<span>.</span></div><div><a href="#account">حساب کاربری</a><a href="#community">انجمن</a><a href="#chat">گفت‌وگو</a></div></nav>
 <main>
 <section class="hero">
 <div class="badge">✦ خوش اومدی به گوشه‌ای از دنیای من</div>
 <h1>سلام، من <em>امیرحسینم.</em></h1>
-<p>این صفحه از صفر ساخته شده؛ یک شروع ساده برای ساختن چیزهای تازه، تجربه کردن ایده‌ها و یاد گرفتن دنیای فناوری.</p>
-<div class="actions"><a class="btn primary" href="#about">بیشتر ببین ↓</a><a class="btn secondary" href="https://github.com/hex51" target="_blank" rel="noopener">گیت‌هاب من ↗</a></div>
+<p>اینجا آزمایشگاه کوچیک ایده‌هاست؛ جایی برای ساختن، یاد گرفتن و تجربه کردن دنیای فناوری.</p>
+<div class="actions"><a class="btn primary" href="#community">بزن بریم ↓</a><a class="btn secondary" href="https://github.com/hex51" target="_blank" rel="noopener">گیت‌هاب من ↗</a></div>
 </section>
 <section class="section" id="about">
 <h2>اینجا قراره چه خبره؟</h2>
@@ -34,25 +35,56 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:#718096;font-size:1
 <article class="card"><div class="icon">🚀</div><h3>شروع کردن</h3><p>این فقط اولین قدمه؛ ادامه‌اش رو با هم می‌سازیم.</p></article>
 </div>
 </section>
-<section class="section" id="guestbook">
-<h2>دفتر یادگاری‌ها ✍️</h2>
-<div class="guestbook">
-<p class="guestbook-intro">یه پیام کوتاه بذار تا اینجا برای همیشه ثبت بشه.</p>
-<form class="form" id="messageForm">
-<input class="field" id="name" maxlength="50" placeholder="اسم تو" required>
-<textarea class="field" id="message" maxlength="500" placeholder="پیامت رو بنویس..." required></textarea>
-<button class="send" id="sendButton" type="submit">ثبت پیام</button>
-</form>
-<div class="status" id="status" role="status" aria-live="polite"></div>
-<div class="messages" id="messages"><div class="empty">در حال دریافت پیام‌ها...</div></div>
+
+<section class="section" id="account">
+<h2>حساب کاربری 🔐</h2>
+<div class="box" id="authBox">
+<h3>عضویت یا ورود</h3><p class="hint">با ایمیل و رمز عبور حساب بساز یا وارد حساب قبلیت شو. نام نمایشی تو در پیام‌ها و گفت‌وگوها نمایش داده می‌شه.</p>
+<form class="form" id="authForm">
+<input class="field" id="displayName" maxlength="40" placeholder="نام نمایشی (برای ثبت‌نام)">
+<input class="field" id="email" type="email" autocomplete="email" placeholder="ایمیل" required>
+<input class="field wide" id="password" type="password" minlength="6" autocomplete="current-password" placeholder="رمز عبور (حداقل ۶ کاراکتر)" required>
+<div class="btnrow wide"><button class="btn primary" type="button" id="signupBtn">ساخت حساب</button><button class="btn secondary" type="submit">ورود</button></div>
+</form><div class="status" id="authStatus" role="status" aria-live="polite"></div>
 </div>
+<div class="box hidden" id="profileBox">
+<div class="item-head"><div><h3 id="welcome"></h3><div class="small" id="userEmail"></div></div><button class="btn secondary" id="logoutBtn">خروج از حساب</button></div>
+<form class="form" id="profileForm" style="margin-top:16px"><input class="field" id="newDisplayName" maxlength="40" placeholder="نام نمایشی جدید"><button class="btn primary" type="submit">ذخیره پروفایل</button></form><div class="status" id="profileStatus"></div>
+</div>
+</section>
+
+<section class="section" id="community">
+<h2>انجمن کوچک ما 💬</h2>
+<div class="box">
+<h3>یه یادگاری بذار</h3><p class="hint">برای ثبت نظر باید وارد حساب کاربریت شده باشی.</p>
+<form class="form" id="commentForm"><textarea class="field wide" id="commentText" maxlength="700" placeholder="نظرت رو بنویس..." required></textarea><div class="btnrow wide"><button class="btn primary" type="submit">ارسال نظر</button><span class="small" id="commentStatus"></span></div></form>
+<div class="list" id="comments"><div class="empty">در حال بارگذاری دیدگاه‌ها...</div></div>
+</div>
+<div class="box">
+<div class="item-head"><div><h3>حمایت با یک لایک ❤️</h3><p class="hint" style="margin:4px 0 0">اگه از این پروژه خوشت اومده، لایکت رو ثبت کن.</p></div><button class="likebtn" id="likeBtn">♡ <span id="likeCount">0</span></button></div><div class="status" id="likeStatus"></div>
+</div>
+</section>
+
+<section class="section" id="chat">
+<h2>گفت‌وگوی زنده ⚡</h2>
+<div class="box">
+<p class="hint">یک فضای گفت‌وگوی عمومی و زنده برای کاربران واردشده. لطفاً اطلاعات خصوصی ارسال نکن.</p>
+<div class="list chatlog" id="chatMessages"><div class="empty">برای مشاهده گفت‌وگو وارد حساب شو...</div></div>
+<form class="form" id="chatForm" style="margin-top:15px"><input class="field wide" id="chatText" maxlength="500" placeholder="پیامت رو بنویس..." required><div class="btnrow wide"><button class="btn primary" type="submit">ارسال پیام</button><span class="small" id="chatStatus"></span></div></form>
+</div>
+</section>
+
+<section class="section hidden" id="adminSection">
+<h2>پنل مدیریت 🛠️</h2><div class="box"><h3>مدیریت محتوا</h3><p class="hint">این بخش فقط برای ایمیل مدیر فعال می‌شود. امکان بررسی کاربران و حذف پیام‌ها و دیدگاه‌های نامناسب.</p><div id="adminUsers" class="list"></div><h3 style="margin-top:24px">دیدگاه‌ها</h3><div id="adminComments" class="list"></div><h3 style="margin-top:24px">گفت‌وگوها</h3><div id="adminChat" class="list"></div><h3 style="margin-top:24px">یادگاری‌ها</h3><div id="adminMessages" class="list"></div></div>
 </section>
 </main>
 <footer><span>ساخته‌شده با کمی کد و کلی ذوق ✦</span><span>© 2026 امیرحسین</span></footer>
 </div>
+
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import { getFirestore, collection, addDoc, serverTimestamp, query, orderBy, limit, onSnapshot } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import { getFirestore, collection, addDoc, serverTimestamp, query, orderBy, limit, onSnapshot, doc, setDoc, deleteDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAfI3emHCx-n-Yx5fqP5ANle-ua_GOMTc",
@@ -63,67 +95,167 @@ const firebaseConfig = {
   appId: "1:282741573569:web:d824e7783b715f11c11140",
   measurementId: "G-9J83655DLG"
 };
-
+// مدیر را بعد از تعیین ایمیل در تنظیمات و Firestore Rules فعال می‌کنیم.
+const ADMIN_EMAIL = "";
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const db = getFirestore(app);
-const form = document.getElementById("messageForm");
-const nameInput = document.getElementById("name");
-const messageInput = document.getElementById("message");
-const statusBox = document.getElementById("status");
-const sendButton = document.getElementById("sendButton");
-const messagesBox = document.getElementById("messages");
+const $ = (id) => document.getElementById(id);
+let currentUser = null;
+let stopChat = null;
+let stopLike = null;
+let myLike = false;
 
-form.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const name = nameInput.value.trim();
-  const message = messageInput.value.trim();
-  if (!name || !message) {
-    statusBox.textContent = "لطفاً اسم و پیام رو وارد کن.";
-    return;
-  }
-  sendButton.disabled = true;
-  statusBox.textContent = "دارم پیامت رو ثبت می‌کنم...";
+function showStatus(id, message){ $(id).textContent = message; }
+function friendlyError(error){
+  const code = error?.code || "";
+  const messages = {
+    "auth/email-already-in-use":"این ایمیل قبلاً ثبت‌نام کرده.",
+    "auth/invalid-email":"فرمت ایمیل درست نیست.",
+    "auth/weak-password":"رمز عبور باید حداقل ۶ کاراکتر باشد.",
+    "auth/invalid-credential":"ایمیل یا رمز عبور اشتباه است.",
+    "auth/user-not-found":"حسابی با این ایمیل پیدا نشد.",
+    "auth/wrong-password":"رمز عبور اشتباه است.",
+    "auth/too-many-requests":"تلاش‌های زیادی انجام شده؛ کمی بعد دوباره امتحان کن.",
+    "auth/operation-not-allowed":"ورود با ایمیل/رمز هنوز در Firebase فعال نشده.",
+    "permission-denied":"دسترسی دیتابیس رد شد؛ Rules را بررسی کن."
+  };
+  return messages[code] || error?.message || "یه خطای ناشناخته رخ داد.";
+}
+
+$("signupBtn").addEventListener("click", async () => {
+  const name = $("displayName").value.trim();
+  const email = $("email").value.trim();
+  const password = $("password").value;
+  if (!name || name.length > 40){ showStatus("authStatus","برای ثبت‌نام یک نام ۱ تا ۴۰ کاراکتری وارد کن."); return; }
   try {
-    await addDoc(collection(db, "messages"), {
-      name,
-      message,
-      createdAt: serverTimestamp()
-    });
-    form.reset();
-    statusBox.textContent = "پیامت با موفقیت ثبت شد؛ ممنون! 💙";
-  } catch (error) {
-    console.error("Firestore error:", error);
-    statusBox.textContent = "ثبت پیام انجام نشد. قوانین دیتابیس و اتصال رو بررسی می‌کنیم.";
-  } finally {
-    sendButton.disabled = false;
+    const credential = await createUserWithEmailAndPassword(auth,email,password);
+    await updateProfile(credential.user,{displayName:name});
+    await setDoc(doc(db,"users",credential.user.uid),{displayName:name,createdAt:serverTimestamp(),updatedAt:serverTimestamp()},{merge:true});
+    showStatus("authStatus","حسابت ساخته شد؛ خوش اومدی! 🎉");
+  } catch(error){ showStatus("authStatus",friendlyError(error)); }
+});
+$("authForm").addEventListener("submit",async(event)=>{
+  event.preventDefault();
+  try { await signInWithEmailAndPassword(auth,$("email").value.trim(),$("password").value); showStatus("authStatus","با موفقیت وارد شدی."); }
+  catch(error){ showStatus("authStatus",friendlyError(error)); }
+});
+$("logoutBtn").addEventListener("click",async()=>{await signOut(auth);});
+$("profileForm").addEventListener("submit",async(event)=>{
+  event.preventDefault(); if(!currentUser)return;
+  const name=$("newDisplayName").value.trim();
+  if(!name || name.length>40){showStatus("profileStatus","نام باید بین ۱ تا ۴۰ کاراکتر باشد.");return;}
+  try{
+    await updateProfile(currentUser,{displayName:name});
+    await setDoc(doc(db,"users",currentUser.uid),{displayName:name,updatedAt:serverTimestamp()},{merge:true});
+    $("welcome").textContent="سلام "+name+" 👋"; $("newDisplayName").value="";
+    showStatus("profileStatus","پروفایلت به‌روز شد.");
+  }catch(error){showStatus("profileStatus",friendlyError(error));}
+});
+
+onAuthStateChanged(auth,async(user)=>{
+  currentUser=user;
+  $("authBox").classList.toggle("hidden",!!user);
+  $("profileBox").classList.toggle("hidden",!user);
+  if(user){
+    const name=user.displayName || user.email.split("@")[0];
+    $("welcome").textContent="سلام "+name+" 👋"; $("userEmail").textContent=user.email;
+    try{await setDoc(doc(db,"users",user.uid),{displayName:name,updatedAt:serverTimestamp()},{merge:true});}catch(e){console.warn(e);}
+    startChat();
+    startLike();
+    $("adminSection").classList.toggle("hidden",!(ADMIN_EMAIL && user.email.toLowerCase()===ADMIN_EMAIL.toLowerCase()));
+    if(ADMIN_EMAIL && user.email.toLowerCase()===ADMIN_EMAIL.toLowerCase()) loadAdmin();
+  }else{
+    $("chatMessages").innerHTML='<div class="empty">برای مشاهده گفت‌وگو وارد حساب شو...</div>';
+    $("adminSection").classList.add("hidden");
+    if(stopChat){stopChat();stopChat=null;} if(stopLike){stopLike();stopLike=null;}
+    $("likeBtn").classList.remove("liked"); $("likeCount").textContent="0";
   }
 });
 
-const messagesQuery = query(collection(db, "messages"), orderBy("createdAt", "desc"), limit(30));
-onSnapshot(messagesQuery, (snapshot) => {
-  messagesBox.replaceChildren();
-  if (snapshot.empty) {
-    const empty = document.createElement("div");
-    empty.className = "empty";
-    empty.textContent = "هنوز پیامی ثبت نشده؛ اولین نفر باش! ✨";
-    messagesBox.append(empty);
-    return;
-  }
-  snapshot.forEach((item) => {
-    const data = item.data();
-    const article = document.createElement("article");
-    article.className = "message";
-    const author = document.createElement("strong");
-    author.textContent = data.name || "مهمان";
-    const body = document.createElement("p");
-    body.textContent = data.message || "";
-    article.append(author, body);
-    messagesBox.append(article);
+const commentsQuery=query(collection(db,"comments"),orderBy("createdAt","desc"),limit(50));
+onSnapshot(commentsQuery,(snap)=>{
+  $("comments").replaceChildren();
+  if(snap.empty){$("comments").innerHTML='<div class="empty">هنوز دیدگاهی ثبت نشده؛ اولین نفر باش!</div>';return;}
+  snap.forEach((entry)=>{
+    const d=entry.data(); const article=document.createElement("article");article.className="item";
+    const head=document.createElement("div");head.className="item-head";
+    const author=document.createElement("strong");author.textContent=d.name||"کاربر";
+    const date=document.createElement("span");date.className="small";date.textContent=d.createdAt?.toDate?d.createdAt.toDate().toLocaleString("fa-IR"):"";
+    const body=document.createElement("p");body.textContent=d.text||"";
+    head.append(author,date);article.append(head,body);$("comments").append(article);
   });
-}, (error) => {
-  console.error("Firestore read error:", error);
-  messagesBox.innerHTML = '<div class="empty">دریافت پیام‌ها با خطا روبه‌رو شد. تنظیمات Rules رو بررسی کن.</div>';
+},(error)=>{console.error(error);$("comments").innerHTML='<div class="empty">برای نمایش دیدگاه‌ها، Rules دیتابیس باید به‌روزرسانی شود.</div>';});
+
+$("commentForm").addEventListener("submit",async(event)=>{
+  event.preventDefault();if(!currentUser){showStatus("commentStatus","برای ارسال دیدگاه اول وارد حساب شو.");return;}
+  const text=$("commentText").value.trim();if(!text)return;
+  try{await addDoc(collection(db,"comments"),{uid:currentUser.uid,name:currentUser.displayName||currentUser.email.split("@")[0],text,createdAt:serverTimestamp()});$("commentText").value="";showStatus("commentStatus","دیدگاهت ثبت شد.");}
+  catch(error){showStatus("commentStatus",friendlyError(error));}
 });
+
+function startLike(){
+  if(stopLike)stopLike();
+  const likesRef=collection(db,"likes");
+  stopLike=onSnapshot(likesRef,(snap)=>{
+    $("likeCount").textContent=String(snap.size);
+    myLike=snap.docs.some(x=>x.id===currentUser?.uid);
+    $("likeBtn").classList.toggle("liked",myLike);
+    $("likeBtn").firstChild.textContent=myLike?"♥ ":"♡ ";
+  },(error)=>{console.warn(error);showStatus("likeStatus","برای فعال شدن لایک، Rules را به‌روزرسانی کن.");});
+}
+$("likeBtn").addEventListener("click",async()=>{
+  if(!currentUser){showStatus("likeStatus","برای لایک کردن وارد حساب شو.");return;}
+  const ref=doc(db,"likes",currentUser.uid);
+  try{if(myLike){await deleteDoc(ref);showStatus("likeStatus","لایکت برداشته شد.");}else{await setDoc(ref,{uid:currentUser.uid,createdAt:serverTimestamp()});showStatus("likeStatus","مرسی از حمایتت! ❤️");}}
+  catch(error){showStatus("likeStatus",friendlyError(error));}
+});
+
+function startChat(){
+  if(stopChat)stopChat();
+  const chatQuery=query(collection(db,"chat"),orderBy("createdAt","asc"),limit(60));
+  stopChat=onSnapshot(chatQuery,(snap)=>{
+    $("chatMessages").replaceChildren();
+    if(snap.empty){$("chatMessages").innerHTML='<div class="empty">گفت‌وگو هنوز شروع نشده؛ اولین پیام رو بفرست.</div>';return;}
+    snap.forEach((entry)=>{
+      const d=entry.data();const row=document.createElement("article");row.className="item";
+      const head=document.createElement("div");head.className="item-head";
+      const author=document.createElement("strong");author.textContent=d.name||"کاربر";
+      const date=document.createElement("span");date.className="small";date.textContent=d.createdAt?.toDate?d.createdAt.toDate().toLocaleTimeString("fa-IR",{hour:"2-digit",minute:"2-digit"}):"";
+      const body=document.createElement("p");body.textContent=d.text||"";
+      head.append(author,date);row.append(head,body);$("chatMessages").append(row);
+    });
+    $("chatMessages").scrollTop=$("chatMessages").scrollHeight;
+  },(error)=>{console.error(error);$("chatMessages").innerHTML='<div class="empty">دسترسی گفت‌وگو نیازمند ورود و Rules جدید است.</div>';});
+}
+$("chatForm").addEventListener("submit",async(event)=>{
+  event.preventDefault();if(!currentUser){showStatus("chatStatus","برای گفت‌وگو باید وارد حساب شوی.");return;}
+  const text=$("chatText").value.trim();if(!text)return;
+  try{await addDoc(collection(db,"chat"),{uid:currentUser.uid,name:currentUser.displayName||currentUser.email.split("@")[0],text,createdAt:serverTimestamp()});$("chatText").value="";showStatus("chatStatus","ارسال شد.");}
+  catch(error){showStatus("chatStatus",friendlyError(error));}
+});
+
+async function loadAdmin(){
+  const targets=[["users","adminUsers","کاربر"],["comments","adminComments","دیدگاه"],["chat","adminChat","پیام گفت‌وگو"],["messages","adminMessages","یادگاری"]];
+  for(const [collectionName,elementId,label] of targets){
+    const root=$(elementId);root.replaceChildren();
+    try{
+      const snap=await getDocs(query(collection(db,collectionName),limit(100)));
+      if(snap.empty){root.innerHTML='<div class="empty">موردی وجود ندارد.</div>';continue;}
+      snap.forEach((entry)=>{
+        const d=entry.data();const row=document.createElement("div");row.className="admin-row";
+        const title=document.createElement("span");title.textContent=(d.displayName||d.name||d.email||d.text||"بدون عنوان").toString().slice(0,100);
+        row.append(title);
+        if(collectionName!=="users"){
+          const del=document.createElement("button");del.className="danger";del.textContent="حذف";
+          del.addEventListener("click",async()=>{if(confirm("این مورد حذف شود؟")){try{await deleteDoc(doc(db,collectionName,entry.id));row.remove();}catch(e){alert(friendlyError(e));}}});
+          row.append(del);
+        }
+        root.append(row);
+      });
+    }catch(error){root.textContent="خطا در دریافت "+label+": "+friendlyError(error);}
+  }
+}
 </script>
 </body>
 </html>
