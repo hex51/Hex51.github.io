@@ -30,7 +30,7 @@ document.getElementById("run").addEventListener("click",async()=>{
   });
   const data=await response.json();
   result.textContent=JSON.stringify({httpStatus:response.status,response:data},null,2);
-  if(response.status===400 && data.error && data.error.message!=="API_KEY_INVALID"){
+  if(response.status===400 && data.error && !data.error.details?.some(item=>item.reason==="API_KEY_INVALID") && !/API key not valid/i.test(data.error.message||"")){
    status.textContent="✅ کلید توسط سرویس شناسایی شد؛ پاسخ خطای ورودیِ خالی طبیعی است. هیچ حسابی ساخته نشد.";
   }else if(data.error?.message==="API_KEY_INVALID"){
    status.textContent="❌ خود سرویس Firebase کلید را نامعتبر می‌داند.";
