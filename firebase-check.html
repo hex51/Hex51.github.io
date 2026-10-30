@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>تست اتصال Firebase</title>
+<style>
+body{font-family:Tahoma,sans-serif;background:#0b1020;color:#f4f6ff;max-width:720px;margin:50px auto;padding:20px;line-height:2}
+main{background:#151d31;border:1px solid #ffffff22;border-radius:16px;padding:24px}
+button{background:#aab5ff;color:#11172b;border:0;border-radius:9px;padding:12px 18px;font-weight:bold}
+pre{direction:ltr;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;background:#080d18;padding:14px;border-radius:10px}
+</style>
+</head>
+<body><main>
+<h2>تست اتصال Firebase 🔎</h2>
+<p>این آزمایش فقط اعتبار API Key و دسترسی به سرویس Authentication را بررسی می‌کند. هیچ حسابی ساخته نمی‌شود.</p>
+<button id="run">شروع آزمایش</button>
+<p id="status">هنوز آزمایشی اجرا نشده.</p>
+<pre id="result"></pre>
+</main>
+<script>
+const apiKey="AIzaSyAfI3emHCx-n-Yx5fqP5ANle-ua_GOMTc";
+document.getElementById("run").addEventListener("click",async()=>{
+ const status=document.getElementById("status"),result=document.getElementById("result");
+ status.textContent="در حال ارسال درخواست آزمایشی...";
+ result.textContent="";
+ try{
+  const response=await fetch("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key="+encodeURIComponent(apiKey),{
+   method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({})
+  });
+  const data=await response.json();
+  result.textContent=JSON.stringify({httpStatus:response.status,response:data},null,2);
+  if(response.status===400 && data.error && data.error.message!=="API_KEY_INVALID"){
+   status.textContent="✅ کلید توسط سرویس شناسایی شد؛ پاسخ خطای ورودیِ خالی طبیعی است. هیچ حسابی ساخته نشد.";
+  }else if(data.error?.message==="API_KEY_INVALID"){
+   status.textContent="❌ خود سرویس Firebase کلید را نامعتبر می‌داند.";
+  }else{
+   status.textContent="نتیجه دریافت شد؛ متن پاسخ را برای بررسی بفرست.";
+  }
+ }catch(e){status.textContent="❌ درخواست به سرویس نرسید یا مرورگر آن را مسدود کرد.";result.textContent=String(e);}
+});
+</script></body></html>
